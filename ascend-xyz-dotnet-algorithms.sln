@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{64BCE434-5A1F-4F5B-BABC-78201DFF9055}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ascend.Algorithms.GdalInfo", "src\Ascend.Algorithms.GdalInfo\Ascend.Algorithms.GdalInfo.csproj", "{DB8B09CF-FB38-43C5-851B-D6A79D26367F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4DF604A9-0629-4D42-8634-A38349C8FFB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9E97159F-68D3-4A4A-98A0-CF25D9271344}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ascend.Algorithms.GdalInfo.Tests", "tests\Ascend.Algorithms.GdalInfo.Tests\Ascend.Algorithms.GdalInfo.Tests.csproj", "{8A8B139F-3875-4D57-801B-5EBB04E49336}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB8B09CF-FB38-43C5-851B-D6A79D26367F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB8B09CF-FB38-43C5-851B-D6A79D26367F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB8B09CF-FB38-43C5-851B-D6A79D26367F}.Debug|x64.ActiveCfg = Debug|x64
+		{DB8B09CF-FB38-43C5-851B-D6A79D26367F}.Debug|x64.Build.0 = Debug|x64
+		{DB8B09CF-FB38-43C5-851B-D6A79D26367F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB8B09CF-FB38-43C5-851B-D6A79D26367F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB8B09CF-FB38-43C5-851B-D6A79D26367F}.Release|x64.ActiveCfg = Release|x64
+		{DB8B09CF-FB38-43C5-851B-D6A79D26367F}.Release|x64.Build.0 = Release|x64
+		{8A8B139F-3875-4D57-801B-5EBB04E49336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A8B139F-3875-4D57-801B-5EBB04E49336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A8B139F-3875-4D57-801B-5EBB04E49336}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8A8B139F-3875-4D57-801B-5EBB04E49336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A8B139F-3875-4D57-801B-5EBB04E49336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A8B139F-3875-4D57-801B-5EBB04E49336}.Release|x64.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DB8B09CF-FB38-43C5-851B-D6A79D26367F} = {64BCE434-5A1F-4F5B-BABC-78201DFF9055}
+		{8A8B139F-3875-4D57-801B-5EBB04E49336} = {4DF604A9-0629-4D42-8634-A38349C8FFB6}
+	EndGlobalSection
+EndGlobal

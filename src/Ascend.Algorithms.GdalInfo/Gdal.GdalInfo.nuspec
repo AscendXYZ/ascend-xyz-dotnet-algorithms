@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Ascend.Algorithms.GdalInfo</id>
+    <version>1.0.0-pre</version>
+    <title>Gdal Info Algorithm for Ascend XYZ</title>
+    <authors>Poul Kjeldager Sørensen</authors>
+    <owners>Ascend Research</owners>
+    <licenseUrl>http://www.ascend.xyz</licenseUrl>
+    <projectUrl>http://www.ascend.xyz</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A algorithm for finding Geospatial Info in images</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>Tag1 Tag2</tags>
+  </metadata>
+</package>

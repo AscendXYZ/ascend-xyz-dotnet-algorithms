@@ -1,4 +1,4 @@
-﻿using OSGeo.GDAL;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,16 +21,7 @@ namespace Ascend.Algorithms.GdalInfo
         {
 
         }
-        public GDALInfoGCP(GCP gcp)
-        {
-            GCPLine = gcp.GCPLine;
-            GCPPixel = gcp.GCPPixel;
-            GCPX = gcp.GCPX;
-            GCPY = gcp.GCPY;
-            GCPZ = gcp.GCPZ;
-            Id = gcp.Id;
-            Info = gcp.Info;
-        }
+       
         public double GCPLine { get; set; }
         public double GCPPixel { get; set; }
         public double GCPX { get; set; }
@@ -45,17 +36,7 @@ namespace Ascend.Algorithms.GdalInfo
         {
 
         }
-        public GDALInfoBandInfo(Band band)
-        {
-            DataTypeStr = Gdal.GetDataTypeName(band.DataType);
-            ColorInterpretation = Gdal.GetColorInterpretationName(band.GetRasterColorInterpretation());
-            XSize = band.XSize;
-            YSize = band.YSize;
-            int blockXSize, blockYSize;
-            band.GetBlockSize(out blockXSize, out blockYSize);
-            this.BlockXSize = blockXSize;
-            this.BlockYSize = blockYSize;
-        }
+        
         public int DataType { get; set; }
         public string DataTypeStr { get; set; }
         public string ColorInterpretation { get; set; }

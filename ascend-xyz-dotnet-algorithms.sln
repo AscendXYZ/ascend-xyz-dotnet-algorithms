@@ -18,6 +18,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9E9715
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ascend.Algorithms.GdalInfo.Tests", "tests\Ascend.Algorithms.GdalInfo.Tests\Ascend.Algorithms.GdalInfo.Tests.csproj", "{8A8B139F-3875-4D57-801B-5EBB04E49336}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ascend.Algorithms.GdalInfo.Models", "src\Ascend.Algorithms.GdalInfo.Models\Ascend.Algorithms.GdalInfo.Models.csproj", "{E3ACEEA9-21D2-4519-9401-9518D3F0D15D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{F92C22A5-463B-42A7-90BD-ECF05D0961FA}"
+	ProjectSection(SolutionItems) = preProject
+		Gruntfile.js = Gruntfile.js
+		package.json = package.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +48,12 @@ Global
 		{8A8B139F-3875-4D57-801B-5EBB04E49336}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A8B139F-3875-4D57-801B-5EBB04E49336}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8A8B139F-3875-4D57-801B-5EBB04E49336}.Release|x64.ActiveCfg = Release|Any CPU
+		{E3ACEEA9-21D2-4519-9401-9518D3F0D15D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3ACEEA9-21D2-4519-9401-9518D3F0D15D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3ACEEA9-21D2-4519-9401-9518D3F0D15D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E3ACEEA9-21D2-4519-9401-9518D3F0D15D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3ACEEA9-21D2-4519-9401-9518D3F0D15D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3ACEEA9-21D2-4519-9401-9518D3F0D15D}.Release|x64.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,5 +61,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DB8B09CF-FB38-43C5-851B-D6A79D26367F} = {64BCE434-5A1F-4F5B-BABC-78201DFF9055}
 		{8A8B139F-3875-4D57-801B-5EBB04E49336} = {4DF604A9-0629-4D42-8634-A38349C8FFB6}
+		{E3ACEEA9-21D2-4519-9401-9518D3F0D15D} = {64BCE434-5A1F-4F5B-BABC-78201DFF9055}
 	EndGlobalSection
 EndGlobal

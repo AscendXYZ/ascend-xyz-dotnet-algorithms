@@ -215,7 +215,7 @@ namespace Ascend.Algorithms.GdalInfo
                     Console.WriteLine("GCP Projection: ", ds.GetGCPProjection());
                     result.GCPProjection = GetProjection(ds.GetGCPProjection());
                     GCP[] GCPs = ds.GetGCPs();
-                    result.GCPs = GCPs.Select(g => new GDALInfoGCP(g)).ToArray();
+                    result.GCPs = GCPs.Select(g => g.AsGDALInfoGCP()).ToArray();
                     for (int i = 0; i < ds.GetGCPCount(); i++)
                     {
                         Console.WriteLine("GCP[" + i + "]: Id=" + GCPs[i].Id + ", Info=" + GCPs[i].Info);
@@ -273,7 +273,7 @@ namespace Ascend.Algorithms.GdalInfo
                         Console.WriteLine("         Size (" + over.XSize + "," + over.YSize + ")");
                         Console.WriteLine("         PaletteInterp: " + over.GetRasterColorInterpretation().ToString());
                     }
-                    bands.Add(new GDALInfoBandInfo(band));
+                    bands.Add(band.AsGDALInfoBandInfo());
                 }
                 result.Bands = bands.ToArray();
             }

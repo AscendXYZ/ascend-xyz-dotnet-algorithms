@@ -1,0 +1,10 @@
+{
+    "name": "ascend-xyz-dotnet-algorithms",
+    "description": "Build Tools",
+    "version": "1.0.0",
+
+    "devDependencies": {
+       "grunt-contrib-compress": "0.13.0"
+    }
+
+}

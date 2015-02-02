@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Ascend.Algorithms.GdalInfo</id>
+    <id>Ascend.Algorithms.GdalInfo.Models</id>
     <version>1.0.0-pre</version>
-    <title>Gdal Info Algorithm for Ascend XYZ</title>
+    <title>Gdal Info Algorithm models for Ascend XYZ</title>
     <authors>Poul Kjeldager Sørensen</authors>
     <owners>Ascend Research</owners>
     <licenseUrl>http://www.ascend.xyz</licenseUrl>

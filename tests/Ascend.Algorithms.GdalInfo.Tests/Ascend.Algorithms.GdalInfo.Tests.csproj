@@ -94,6 +94,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\src\Ascend.Algorithms.GdalInfo.Models\Ascend.Algorithms.GdalInfo.Models.csproj">
+      <Project>{e3aceea9-21d2-4519-9401-9518d3f0d15d}</Project>
+      <Name>Ascend.Algorithms.GdalInfo.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\src\Ascend.Algorithms.GdalInfo\Ascend.Algorithms.GdalInfo.csproj">
       <Project>{db8b09cf-fb38-43c5-851b-d6a79d26367f}</Project>
       <Name>Ascend.Algorithms.GdalInfo</Name>

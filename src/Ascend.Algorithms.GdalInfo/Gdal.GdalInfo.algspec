@@ -5,7 +5,7 @@
   <!-- Algorithm Meta Data -->
   <Category>Ascend.Algorithms.GdalAlgorithms</Category>
   <Id>Gdal.GdalInfo</Id>
-  <Version>1.0.0-pre-20150201-02</Version>
+  <Version>1.0.0-pre-20150201-04</Version>
   <AlgorithmFramework>native-algorithms</AlgorithmFramework>
   <Authors>Poul Kjeldager Sørensen</Authors>
   <Company>Ascend XYZ Research</Company>

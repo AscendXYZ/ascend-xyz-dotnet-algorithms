@@ -57,10 +57,6 @@ namespace Ascend.Algorithms.GdalInfo
     public class GDALInfoAlgorithm : AscendAlgorithm<GDALInfoInput, GDALInfoResult>
     {
 
-
-
-
-
         private static double[] GDALInfoGetPosition(Dataset ds, double x, double y)
         {
             double[] adfGeoTransform = new double[6];
@@ -84,10 +80,18 @@ namespace Ascend.Algorithms.GdalInfo
                 /* -------------------------------------------------------------------- */
                 Gdal.AllRegister();
 
+                var source = this.Payload.GdalDataSource;
+
+                // In case its not a /vsicurl, assume its a local file
+                if (!source.StartsWith("/vsicurl"))
+                {
+                    source = ResolvePath(source);
+                }
+
                 /* -------------------------------------------------------------------- */
                 /*      Open dataset.                                                   */
                 /* -------------------------------------------------------------------- */
-                Dataset ds = Gdal.Open(this.Payload.GdalDataSource, Access.GA_ReadOnly);
+                Dataset ds = Gdal.Open(source, Access.GA_ReadOnly);
 
                 if (ds == null)
                 {
@@ -280,6 +284,7 @@ namespace Ascend.Algorithms.GdalInfo
             catch (Exception e)
             {
                 Console.WriteLine("Application error: " + e.Message);
+                throw;
             }
 
             return Task.FromResult(result);

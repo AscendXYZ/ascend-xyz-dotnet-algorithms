@@ -5,7 +5,7 @@
   <!-- Algorithm Meta Data -->
   <Category>Ascend.Algorithms.GdalAlgorithms</Category>
   <Id>Gdal.GdalInfo</Id>
-  <Version>1.0.0-pre-20150201-04</Version>
+  <Version>1.0.0-pre-20150522-02</Version>
   <AlgorithmFramework>native-algorithms</AlgorithmFramework>
   <Authors>Poul Kjeldager Sørensen</Authors>
   <Company>Ascend XYZ Research</Company>
@@ -24,7 +24,7 @@
 
   <!-- API Context -->
   <InputParameters>
-    <Parameter type="string" name="GdalDataSource" />
+    <Parameter type="file" name="GdalDataSource" />
   </InputParameters>
   <Outputs>
   </Outputs>
